@@ -37,7 +37,7 @@
         <!-- h1 and order option -->
         <section class="hero">
            <h1 class="hero-title">Effective Solutions for Your Business</h1> 
-           <button type="button" class="button">Order Service</button>
+           <button type="button" class="button" data-modal-open>Order Service</button>
         </section>
         <!-- values and advantages of the company -->
         <section class="section values">
@@ -363,5 +363,19 @@
         </div>
         
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+
+            <div class="modal-button">
+                <button type="button" class="close-button" data-modal-close>
+                    <svg class="close-icon">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
