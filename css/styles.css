@@ -438,7 +438,7 @@ img.worke-xample {
     border: 1px solid var(--customers-color);
     border-radius: 4px;
     color: var(--customers-color);
-    transition-property: background-color, color;
+    transition-property: border-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
