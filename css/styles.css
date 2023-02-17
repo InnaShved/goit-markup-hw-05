@@ -610,7 +610,8 @@ img.work-example {
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--primary-bg-color);
-    transition-property: transform, background-color;
+    opacity: 1;
+    transition-property: opacity, transform, background-color;
     transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -619,6 +620,13 @@ img.work-example {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+}
+.backdrop.is-hidden .modal{
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, transform, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .modal-button{
     width:100%;
